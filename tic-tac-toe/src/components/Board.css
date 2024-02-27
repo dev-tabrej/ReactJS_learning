@@ -2,11 +2,13 @@
     display: grid;
     /* margin-top: 300px; */
     grid-template-rows: repeat(3,100px);
+    grid-gap: 5px;
     justify-content: center ;
     align-items: center;
     /* margin:auto; */
     min-height: 300px;
     min-height: 300px;
+    /* border: 2px solid black; */
     /* border: 2px solid black; */
 
 }
@@ -17,12 +19,15 @@
     justify-content: space-evenly;
     /* border: 2px solid black;  */
     align-items: center;
-    min-height: 100px;
-    min-width: 300px;
-    gap: 4px;
+    height: 100px;
+    width: 300px;
+    /* gap: 4px; */
+    /* margin: 2px; */
 }
 .columb{
-    border: 1px solid black; 
+    border: 2px solid black; 
     min-height: 100px;
     min-width: 100px;
+    margin: 5px;
+    background-color: rgba(128, 128, 128, 0.61);
 }

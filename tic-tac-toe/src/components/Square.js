@@ -1,6 +1,5 @@
-import React from 'react'
-import { useState } from 'react';
+import React from 'react';
 
-export default function Square({value, onSquareClick}) {
-    return <button className="columb" onClick={onSquareClick}>{value}</button>;
-  }
+export default function Square({ value, onSquareClick }) {
+  return <button className="columb" onClick={onSquareClick} style={{ color: value === "X" ? "red" : "blue", fontSize: "2.5rem" }}>{value}</button>;
+}
