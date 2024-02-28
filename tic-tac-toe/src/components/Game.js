@@ -17,7 +17,6 @@ export default function Game() {
     setHistory(nextHistory);
     setCurrentMove(nextHistory.length - 1);
     // console.log(history,nextSquares)
-
     setXTurn(!xTurn);
   };
 
