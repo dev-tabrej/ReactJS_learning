@@ -1,0 +1,91 @@
+:root {
+  --p-color: #fff;
+  --s-color: "red";
+  --dark: "black"
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+.logo {
+  height: 60%;
+  /* width: 100%; */
+}
+
+.header {
+  background-color: var(--p-color);
+  height: 72px;
+  width: 100vw;
+  display: flex;
+  /* padding: 1rem; */
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+
+  margin: 10px;
+  /* flex-basis: 30%; */
+  /* min-width: 800px; */
+  justify-content: center;
+  align-items: center;
+}
+
+
+.nav-menu>a {
+  margin: 10px;
+
+}
+
+.btn-login {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-view {
+  display: flex;
+  background-color: var(--p-color);
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  width: 80%;
+
+}
+
+.text_content,
+.image-product {
+  flex-basis: 50%;
+}
+
+.text_content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: baseline;
+  width: 100%;
+  color: black;
+}
+
+.image-product>img {
+  height: 350px;
+  filter: drop-shadow(30px 30px 10px #0000006c);
+}
