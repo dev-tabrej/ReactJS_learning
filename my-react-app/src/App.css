@@ -1,12 +1,13 @@
 :root {
   --p-color: #fff;
-  --s-color: "red";
+  --s-color: red;
   --dark: "black"
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
+
 
 }
 
@@ -15,6 +16,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #fff;
   flex-direction: column;
 }
 
@@ -49,6 +51,10 @@
 
 .nav-menu>a {
   margin: 10px;
+  text-transform: uppercase;
+  color: gray;
+  font-size: .8rem;
+
 
 }
 
@@ -56,6 +62,9 @@
   height: 30px;
   display: flex;
   align-items: center;
+  background-color: red;
+  color: white;
+  border-radius: 0;
   justify-content: center;
 }
 
@@ -83,6 +92,56 @@
   align-items: baseline;
   width: 100%;
   color: black;
+}
+
+.title {
+  font-size: 4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.paragraph {
+  color: grey;
+  width: 70%;
+  /* font-size: .8rem; */
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2rem;
+  margin-bottom: 20px;
+
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 40px;
+  width: 60%;
+}
+
+.buttons>.btn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 10px;
+  border: 1px;
+  border-radius: 0;
+  height: 100%;
+  /* border: 2px solid grey; */
+}
+
+.shop {
+  background-color: var(--s-color);
+  border: none;
+}
+
+.buttons>.category {
+  background-color: white;
+  color: grey;
+  border: 2px solid grey;
+
 }
 
 .image-product>img {
