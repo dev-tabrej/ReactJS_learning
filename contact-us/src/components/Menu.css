@@ -1,0 +1,108 @@
+.main-view {
+    height: 90%;
+    width: 85%;
+    margin-top: 40px;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: flex-start;
+}
+
+.title {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.paragraph {
+    color: grey;
+    width: 70%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    text-align: justify;
+    line-height: 1.2rem;
+    margin-bottom: 20px;
+
+}
+
+.form-container {
+    display: flex;
+    flex-direction: row;
+    min-height: 60%;
+    /* padding: 10px; */
+}
+
+.lady-image {
+    height: 400px;
+    min-width: 400px;
+    aspect-ratio: 1 / 1;
+    flex-basis: 50%;
+    /* background: cover; */
+}
+
+.form-view {
+    /* flex-basis: 50%; */
+    min-width: 400px;
+    /* min-width: 50%; */
+    padding: 10px;
+}
+
+.top-buttons {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.btn {
+    /* display: flex; */
+    /* justify-content: flex-start; */
+    /* align-items: center; */
+    /* margin-right: 10px; */
+    font-size: .8rem;
+    padding: 5px;
+    width: 160px;
+    border: 1px;
+    border-radius: 2px;
+    background-color: black;
+    color: white;
+    /* height: 100%; */
+    /* border: 2px solid grey; */
+}
+
+.submit {
+    align-self: flex-end;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+textarea {
+    border: 1px solid grey;
+    border-radius: 2px;
+    line-height: 1.4rem;
+}
+
+input:focus,
+textarea:focus {
+    border: 1px solid orchid;
+    outline: 0;
+}
+
+label {
+    position: relative;
+    top: 20px;
+    left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    width: max-content;
+}
