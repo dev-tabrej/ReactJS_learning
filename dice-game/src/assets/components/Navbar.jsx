@@ -1,21 +1,28 @@
 import React, { useState } from 'react'
 import '../../App.css'
 
-export default function Navbar({ value }) {
-    const [seletedNumber, setSelectedNumber] = useState();
-    // console.log(seletedNumber)
+export default function Navbar({ score, seletedNumber, setSelectedNumber, setError, error }) {
+
+    console.log("selected Number", seletedNumber)
     let diceArray = [1, 2, 3, 4, 5, 6];
+
+    const numberSelectorHandler = (value) => {
+        setSelectedNumber(value);
+        setError("")
+    }
     return (
         <div className="navbar">
             <div className="nav-left">
-                <h1 className="score">{value ? value : 0}</h1>
+                <h1 className="score">{score}</h1>
                 <h3>Total Score</h3>
             </div>
             <div className="nav-right">
+                <p className='error'>{error}</p>
+
                 <ul>
                     {diceArray.map((value, i) => (
                         <li key={i}
-                            onClick={() => (setSelectedNumber(value))}
+                            onClick={() => { numberSelectorHandler(value) }}
                             className={(value === seletedNumber) ? 'selected' : ''}>{value}</li>
                     ))}
                 </ul>

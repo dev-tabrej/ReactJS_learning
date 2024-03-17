@@ -3,7 +3,7 @@ import './App.css'
 import Start from './assets/components/Start'
 import Gameplay from './assets/components/Gameplay'
 function App() {
-  const [isStarted, setIsStarted] = useState(true);
+  const [isStarted, setIsStarted] = useState(false);
   // console.log(isStarted)
 
 

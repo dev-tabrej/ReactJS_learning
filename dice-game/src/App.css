@@ -125,7 +125,7 @@ ul>li.selected {
 
 .btn {
   height: 30px;
-  width: 100%;
+  width: 200px;
   background-color: white;
   border-radius: 5px;
   border: 1px solid black;
@@ -135,4 +135,32 @@ ul>li.selected {
 .btn-rules {
   background-color: black;
   color: white;
+}
+
+.rules {
+  display: flex;
+  background-color: rgba(185, 91, 235, 0.457);
+  padding: 20px;
+  border-radius: 10px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: 400;
+  max-width: inherit;
+}
+
+.rules>h2 {
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.rules>p {
+  /* margin-bottom: 10px; */
+  text-transform: capitalize;
+  font-size: 12px;
+  padding: 2px;
+}
+
+.error {
+  color: red;
 }
