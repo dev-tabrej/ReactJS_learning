@@ -3,3 +3,7 @@
     height: 60%;
     width: 80%;
 }
+
+.start-game>h1 {
+    float: right;
+}
